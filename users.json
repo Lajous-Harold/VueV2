@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "email": "john.pork@gmail.com",
+    "password": "Regexpert@1"
+  },
+  {
+    "id": 1,
+    "email": "harold.lajous@efrei.net",
+    "password": "Password@1"
+  }
+]
