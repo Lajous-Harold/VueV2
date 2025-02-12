@@ -56,6 +56,24 @@ if (isUserInputValid(testMail)) {
   console.log("Mail invalide");
 }
 
+const isUserPasswordValid = (input: string): boolean => {
+  const pattern = new RegExp(
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}$/
+  );
+  return pattern.test(input);
+};
+
+//Password de test
+
+let s1 = "Geeks@123";
+let s2 = "GeeksforGeeks";
+let s3 = "Geeks123";
+let s4 = "GEEKS123";
+console.log(s1, isUserPasswordValid(s1));
+console.log(s2, isUserPasswordValid(s2));
+console.log(s3, isUserPasswordValid(s3));
+console.log(s4, isUserPasswordValid(s4));
+
 const submitHandler = () => {};
 
 const inputHandler = function () {};
